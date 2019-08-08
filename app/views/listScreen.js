@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { View, Text, ActivityIndicator, FlatList, TouchableOpacity } from "react-native";
 import styles from "../styles";
-import NavigationService from "../navigation/";
+import NavigationService from "../navigation";
 
 
 import { bindActionCreators } from "redux";

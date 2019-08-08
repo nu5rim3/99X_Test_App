@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 import { store, persistor } from "./app/stores"; //Import the store
-import Navigation from "./app/views/";
+import Navigation from "./app/views/index";
 
 export default class App extends React.Component {
   renderLoading = () => (

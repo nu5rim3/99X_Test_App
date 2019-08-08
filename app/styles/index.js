@@ -63,6 +63,7 @@ export default {
         borderRadius: WP(2),
         paddingHorizontal: WP(4),
         paddingVertical: WP(3),
+        marginBottom: WP(2),
         marginTop: WP(5),
         elevation: 5,
         shadowColor: DARK,

@@ -16,7 +16,7 @@ export default class Item extends React.PureComponent {
                     NavigationService.navigate('PreviewScreen', { imageUrl: this.props.url });
                 }}
             >
-                <View style={{ width: WP(42), height: HP(19), margin: WP(2), backgroundColor: 'powderblue' }} testID="detail_thumbnail_list_item">
+                <View style={{ width: WP(42), height: HP(19), margin: WP(2) }} testID="detail_thumbnail_list_item">
                     <Image
                         style={[styles.imageFull]}
                         source={{ uri: this.props.thumbnailUrl }}

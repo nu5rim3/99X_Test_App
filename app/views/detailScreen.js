@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { View, Text, TouchableOpacity, FlatList, Image, ActivityIndicator, Button } from "react-native";
 import styles from "../styles";
-import NavigationService from "../navigation/";
+import NavigationService from "../navigation";
 import { responsiveHeight as HP, responsiveWidth as WP, responsiveFontSize as RF } from "react-native-responsive-dimensions";
 import Item from './components/ListItem';
 
@@ -45,6 +45,7 @@ class DetailScreen extends Component {
                 </View>
 
                 <Button
+                    style={{marginHorizontal: 10,}}
                     testID="get-image-click"
                     onPress={() => {
                         this.getThumImage(postData.userId);
