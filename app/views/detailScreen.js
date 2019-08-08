@@ -50,7 +50,7 @@ class DetailScreen extends Component {
                         this.getThumImage(postData.userId);
                     }}
                     color="#f47e47"
-                    title="Load Image"
+                    title="Load Images"
                 />
 
                 <View style={{ flex: 1, flexDirection: 'row', marginTop: WP(3) }} testID="preview-image-view">
