@@ -27,5 +27,6 @@ Sample app for 99X
 
 - clone the repo
 - cd into the project folder
-- **npm i** or **yarn** 
+- **yarn** or **npm i** 
+- cd into ios and **pod install** and cd ..
 - **react-native run-ios** or **react-native run-android**
