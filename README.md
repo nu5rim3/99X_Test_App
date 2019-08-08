@@ -13,13 +13,15 @@ Sample app for 99X
 
 ### UI screen shots
 
-![](https://i.ibb.co/zVp5gJF/Simulator-Screen-Shot-i-Phone-X-2019-08-08-at-12-00-38.png)
-![](https://i.ibb.co/Stkjmt7/Simulator-Screen-Shot-i-Phone-X-2019-08-08-at-12-00-43.png)
-![](https://i.ibb.co/2NzgH3f/Simulator-Screen-Shot-i-Phone-X-2019-08-08-at-12-00-47.png)
+![](https://github.com/nu5rim3/Test_App_99X/blob/master/screen-shots/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202019-08-08%20at%2012.00.38.png)
+
+![](https://github.com/nu5rim3/Test_App_99X/blob/master/screen-shots/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202019-08-08%20at%2012.00.43.png)
+
+![](https://github.com/nu5rim3/Test_App_99X/blob/master/screen-shots/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202019-08-08%20at%2012.00.47.png)
 
 ### Testing Screen shot
 
-![](https://i.ibb.co/0mdtf89/Screen-Shot-2019-08-08-at-12-00-26-PM.png)
+![](https://github.com/nu5rim3/Test_App_99X/blob/master/screen-shots/Screen%20Shot%202019-08-08%20at%2012.00.26%20PM.png)
 
 ### To Run the App
 
