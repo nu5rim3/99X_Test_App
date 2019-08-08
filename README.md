@@ -4,7 +4,7 @@ Sample app for 99X
 
 ### Used libs
 
-- Featching data from REST API - https://jsonplaceholder.typicode.com
+- Fetching data from REST API - https://jsonplaceholder.typicode.com
 - Used Redux -https://www.npmjs.com/package/redux
 - Cached using,
   - AsyncStorage -  https://github.com/react-native-community/async-storage
