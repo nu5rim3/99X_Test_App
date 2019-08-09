@@ -4,9 +4,9 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import NavigationService from "../navigation/";
 const AppNavigator = createStackNavigator(
     {
-        ListScreen: { getScreen: () => require("./ListScreen.js").default },
-        DetailScreen: { getScreen: () => require("./DetailScreen.js").default },
-        PreviewScreen: { getScreen: () => require("./PreviewScreen.js").default }
+        ListScreen: { getScreen: () => require("./listScreen.js").default },
+        DetailScreen: { getScreen: () => require("./detailScreen.js").default },
+        PreviewScreen: { getScreen: () => require("./previewScreen.js").default }
     },
     {
         initialRouteName: "ListScreen"
