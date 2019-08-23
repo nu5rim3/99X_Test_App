@@ -11,6 +11,7 @@ describe('App', () => {
   });
 
   it('should have list screen', async () => {
+    await element(by.id('list_empty_reload_click')).tap();
     await expect(element(by.id('list_view'))).toBeVisible();
   });
 

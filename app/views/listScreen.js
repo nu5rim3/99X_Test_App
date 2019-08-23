@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { Component } from "react";
-import { View, Text, ActivityIndicator, FlatList, TouchableOpacity } from "react-native";
+import { View, Text, ActivityIndicator, Button, FlatList, TouchableOpacity, RefreshControl } from "react-native";
 import styles from "../styles";
 import NavigationService from "../navigation";
 
@@ -28,7 +28,9 @@ class ListScreen extends Component {
     }
 
     componentDidMount() {
+        if (this.props.data.length === 0){
         this.getPosts();
+        }
     }
 
     getPosts() {
@@ -60,22 +62,22 @@ class ListScreen extends Component {
 
     ListEmptyComponent = () => {
         return (
-            <View style={[styles.centerView]} testID="list_empty_view">
-                <Text style={[styles.GTEXT, styles.centerText]}>No Comments found.</Text>
-                <TouchableOpacity
-                     testID="list_empty_reload_click"
+            <View style={[styles.fullHeightWidth]} testID="list_empty_view">
+                <Text style={[styles.GTEXT, styles.centerText]}>No List Data</Text>
+                <Button
+                    style={{ marginHorizontal: 10 }}
+                    testID="list_empty_reload_click"
                     onPress={() => this.getPosts()}
-                >
-                    <Text>Try again.</Text>
-                </TouchableOpacity>
+                    color="#f47e47"
+                    title="Load List"
+                />
             </View>
-        )
+        );
     }
 
     render() {
 
         const { loading, data } = this.props;
-
         if (loading) {
             return (
                 <View testID="list_loading" style={[styles.BGOW, styles.container, styles.centerView]}>
@@ -90,9 +92,16 @@ class ListScreen extends Component {
                         keyExtractor={(item) => item.id.toString()}
                         renderItem={this.renderListItem}
                         ListEmptyComponent={this.ListEmptyComponent}
-                        onRefresh={() => this.onRefresh()}
-                        refreshing={this.state.isFetching}
-                        extraData={this.props}
+                        refreshControl={
+                            <RefreshControl
+                                refreshing={this.state.isFetching}
+                                onRefresh={this.onRefresh.bind(this)}
+                                title="Pull to refresh"
+                                tintColor="#f47e47"
+                                titleColor="#f47e47"
+                             />
+                          }
+                        extraData={data}
                     />
                 </View>
             );

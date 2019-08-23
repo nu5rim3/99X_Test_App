@@ -41,13 +41,19 @@ export default {
         paddingHorizontal: WP(2),
         paddingVertical: HP(1),
         borderBottomColor : GRAY,
-        borderBottomWidth: 1
+        borderBottomWidth: 1,
+    },
+    fullHeightWidth: {
+        height: HP(100),
+        width:WP(100),
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     centerView: {
-        justifyContent: "center",
+        justifyContent: 'center',
     },
     centerText: {
-        textAlign: "center",
+        textAlign: 'center',
     },
     H1: {
         fontSize: RF(4)

@@ -9,7 +9,7 @@ import Navigation from "./app/views/index";
 export default class App extends React.Component {
   renderLoading = () => (
     <View style={styles.container}>
-      <ActivityIndicator size="large" />
+      <ActivityIndicator size="large" color="#f47e47" />
     </View>
   );
 

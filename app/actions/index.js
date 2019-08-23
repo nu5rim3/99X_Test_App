@@ -44,7 +44,8 @@ export function getPosts() {
                     this.getUserDetail(element.userId, (value) => {
                         element.name = value;
                     });
-                    if (responseJson.length == (index + 1)) {
+                    if (responseJson.length === (index + 1)) {
+                        console.log(responseJson)
                         dispatch({ type: GET_POSTS_SUCCESS, data: responseJson });
                     }
                 });
